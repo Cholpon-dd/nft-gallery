@@ -18,9 +18,6 @@
     padding: 10px 20px;
     border-radius: 10px;
   }
-  .card h4{
-    margin: 10px 0;
-  }
 
 .card__img{
     max-width: 200px;
@@ -33,30 +30,43 @@
     max-height: 200px;
     border-radius: 10px;
 }
-  .btn {
-    display: inline-block;
-    position: relative;
-    background: #de6161;   
-    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  
-    background: linear-gradient(to right, #2657eb, #de6161); 
-    color: #fff;
-    transition: 0.5s;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: auto;
-    width: 150px;
-    text-align: center;
+.title{
+  margin: 10px 0;
+  color: #a62e2e;
+  font-size: 18px;
+  font-weight: 400;
+ 
+}
+.sub_title{
+font-weight: 600;
+color: 	midnightblue;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  background: #de6161;   
+  background: -webkit-linear-gradient(to right, #2657eb, #de6161);  
+  background: linear-gradient(to right, #2657eb, #de6161); 
+  color: #fff;
+  transition: 0.5s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: auto;
+  width: 150px;
+  text-align: center;
   }
-  .btn:after {
-    content: url(../assets/img/arrow_right_icon.svg);
-    position: absolute;
-    opacity: 0;  
-    top: 13px;
-    right: -6px;
-    transition: 0.5s;
-    color: #fff;
-    width: 14px;
-    height: 14px;
+
+.btn:after {
+  content: url(../assets/img/arrow_right_icon.svg);
+  position: absolute;
+  opacity: 0;  
+  top: 13px;
+  right: -6px;
+  transition: 0.5s;
+  color: #fff;
+  width: 14px;
+  height: 14px;
   }
   
   .btn:hover{

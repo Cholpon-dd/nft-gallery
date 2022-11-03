@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     background-color: midnightblue;
     color: white;
 }
@@ -11,10 +11,12 @@
     cursor: pointer;
 }
 .logo {
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 4px;
     font-size: 16px;
-    color: #fff;
+    color: #de6161;   
+    color: -webkit-linear-gradient(to right, #2657eb, #de6161);  
+    color: linear-gradient(to right, #2657eb, #de6161); 
 }
 .logo:hover{
     color: aquamarine;
