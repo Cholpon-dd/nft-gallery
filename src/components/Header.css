@@ -6,8 +6,18 @@
     background-color: midnightblue;
     color: white;
 }
-.logo {
+.logo_link{
     padding-left: 20px;
+    cursor: pointer;
+}
+.logo {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 16px;
+    color: #fff;
+}
+.logo:hover{
+    color: aquamarine;
 }
 .list {
     display: flex;
@@ -16,6 +26,14 @@
     padding-top: 10px;
 
 }
-.list li{
+.list li:hover{
+    color: aquamarine;
+}
+.lists{
     margin-right: 15px;
+    cursor: pointer;
+}
+
+.lists a:hover{
+    color: aquamarine;
 }

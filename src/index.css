@@ -5,41 +5,46 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    background: #000066;
+    width: 100%;
+    min-height: 100vh;
+}
 .wrapper {
-    /*width: calc(100vw - 100px);*/
     height: 100%;
     max-width: 1600px;
-}
-.container {
-    margin: 0 auto;
-    width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 16px;
-
+    max-width: 100%;
+    background: #24C6DC; 
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  
+    background: linear-gradient(to right, #514A9D, #24C6DC); 
 
 }
-.card_container{
-    border: 1px solid #ccc;
 
+.hero{
+    text-align: center;
+    padding-bottom: 56px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 6vw;
+    margin: 0;
+    background: url(./assets/img/dark_blue.png);
+    background-size: 30%;
+    background-position: 50% 50%;
+    -webkit-background-clip: text;
+    color: rgba(0,0,0,0.08);
+    animation: zoomout infinite ease 4000ms forwards;
 }
-.card__img{
-    width: 287px;
 
+.title{
+    font-size: 18px;
+    font-weight: 400;
+   
 }
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 133px;
-    height: 35px;
-    border-radius: 5px;
-    margin: 8px auto;
-    border: none;
+.sub_title{
+ font-weight: 600;
 }
 .loading{
-    /*margin: 20px 0 20px 0;*/
-    /*padding: 30px 50px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,9 +53,14 @@
     border-radius: 4px;
     height: 100vh;
 }
-.about__card{
-    width: 200px;
-    height: 200px;
-    border: 1px solid #ccc;
 
-}
+
+
+@keyframes zoomout {
+    from {
+      background-size: 40%;
+    }
+    to {
+      background-size: 10%;
+    }
+  }

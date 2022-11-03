@@ -1,0 +1,110 @@
+.container{
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.04);
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  .card h4{
+    margin: 10px 0;
+  }
+
+.card__img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+  }
+  
+.def__img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+  .btn {
+    display: inline-block;
+    position: relative;
+    background: #de6161;   
+    background: -webkit-linear-gradient(to right, #2657eb, #de6161);  
+    background: linear-gradient(to right, #2657eb, #de6161); 
+    color: #fff;
+    transition: 0.5s;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: auto;
+    width: 150px;
+    text-align: center;
+  }
+  .btn:after {
+    content: url(../assets/img/arrow_right_icon.svg);
+    position: absolute;
+    opacity: 0;  
+    top: 13px;
+    right: -6px;
+    transition: 0.5s;
+    color: #fff;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    color: purple;
+  }
+  
+  .btn:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  @media (max-width: 1024px)  {
+    .container{
+      max-width: 50%; 
+    }
+  
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+}
+@media (max-width:556px)  {
+  .container{
+    max-width: 50%; 
+  }
+  .row{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  
+}
+
+@media (max-width:406px)  {
+  .container{
+    max-width: 70%; 
+  }
+  .row{
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  
+}
+@media (max-width:330px)  {
+  .container{
+    max-width: 70%; 
+  }
+} 
